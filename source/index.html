@@ -13,15 +13,16 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo">
-          <svg class="header__logo-img">
-            <use xlink:href="#"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 1920px)" srcset="./img/logo_desktop.svg">
+            <img class="header__logo-image" src="./img/logo_mobile.svg" width="96" height="29" alt="ВЕСНА ВСЕГДА">
+          </picture>
         </a>
       </div>
-      <nav class="header__nav nav">
-        <button class="nav__toggel"></button>
+      <nav class="header__nav nav nav--closed">
+        <button class="nav__toggle"></button>
         <ul class="header__nav-list nav-list">
-          <li class="nav-list__item"><a class="nav-list__item-link">свадебная флористика</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-link" href="index.html">свадебная флористика</a></li>
           <li class="nav-list__item"><a class="nav-list__item-link">букеты на любые мероприятия</a></li>
           <li class="nav-list__item"><a class="nav-list__item-link">букеты невесты</a></li>
           <li class="nav-list__item"><a class="nav-list__item-link">композиции</a></li>
@@ -29,42 +30,43 @@
         </ul>
       </nav>
       <div class="header__info">
+        <img class="header__bc-img" src="./img/background_flower_mobile.png" alt="цветочная композиция"/>
         <h1 class="header__info-title">флористика с душой</h1>
-        <a class="header__info-button">смотреть работы</a>
+        <a class="header__info-button button">смотреть работы</a>
         <ul class="header__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__item-link">
-              <svg class="social-list__item-icon">
-                <use xlink:href="#"></use>
+              <svg class="social-list__item-icon" width="35" height="35">
+                <use xlink:href="#icon-insta_mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__item-link">
-              <svg class="social-list__item-icon"> 
-                <use xlink:href="#"></use>
+              <svg class="social-list__item-icon" width="35" height="35"> 
+                <use xlink:href="#icon-fb_mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__item-link">
-              <svg class="social-list__item-icon">
-                <use xlink:href="#"></use>
+              <svg class="social-list__item-icon" width="35" height="35">
+                <use xlink:href="#icon-whatsapp_mobile"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item"> 
             <a class="social-list__item-link">
-              <svg class="social-list__item-icon">
-                <use xlink:href="#"></use>
+              <svg class="social-list__item-icon" width="35" height="35">
+                <use xlink:href="#icon-vk_mobile"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="header__arrow-down">
           <a class="header__arrow-down-link">
-            <svg class="header__arrow-down-icon">
-              <use xlink:href="#"></use>
+            <svg class="header__arrow-down-icon" width="14" height="21">
+              <use xlink:href="#icon-arrow-down_mobile"></use>
             </svg>
           </a>
         </div>
@@ -73,12 +75,36 @@
     <main>
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2 class="catalog__title"></h2>
+          <h2 class="catalog__title">каталог услуг</h2>
           <ul class="catalog__picture-list picture-list">
-            <li class="picture-list__item"></li>
-            <li class="picture-list__item"></li>
-            <li class="picture-list__item"></li>
-            <li class="picture-list__item"></li>
+            <li class="picture-list__item">
+              <picture>
+                <img class="picture-list__item-bc-img" src="./img/catalog_buket1_mobile.jpg" srcset="./img/catalog_buket1_mobile@2x.jpg 2x" alt="букет невесты"/> 
+              </picture>
+              <p class="picture-list__item-number">01</p>
+              <p class="picture-list__item-title">букет невесты и свадебное оформление</p>
+            </li>
+            <li class="picture-list__item">
+              <picture>
+                <img class="picture-list__item-bc-img" src="./img/catalog_buket2_mobile.jpg" srcset="./img/catalog_buket2_mobile@2x.jpg 2x" alt="букеты на торжества"/> 
+              </picture>
+              <p class="picture-list__item-number">02</p>
+              <p class="picture-list__item-title">букеты на торжества</p>
+            </li>
+            <li class="picture-list__item">
+              <picture>
+                <img class="picture-list__item-bc-img" src="./img/catalog_buket3_mobile.jpg" srcset="./img/catalog_buket3_mobile@2x.jpg 2x" alt="композиции"/> 
+              </picture>
+              <p class="picture-list__item-number">03</p>
+              <p class="picture-list__item-title">композиции</p>
+            </li>
+            <li class="picture-list__item">
+              <picture>
+                <img class="picture-list__item-bc-img" src="./img/catalog_buket4_mobile.png" srcset="./img/catalog_buket4_mobile@2x.png 2x" alt="оформление мероприятий"/> 
+              </picture>
+              <p class="picture-list__item-number">04</p>
+              <p class="picture-list__item-title">оформление мероприятий</p>
+            </li>
           </ul>
           <ul class="catalog__toggel-list toggel-list">
             <li class="toggel-list__item"></li>
@@ -89,54 +115,70 @@
         </div>
       </section>
       <section class="special-sentence">
-        <div class="spacial-sentence__img-wrapper">
-          <img class="spacial-sentence__img"/>
+        <div class="special-sentence__img-wrapper">
+          <picture>
+            <img class="special-sentence__img" src="./img/special_mobile.jpg" srcset="./img/special_mobile@2x.jpg 2x" alt="акционное предложение">
+          </picture>
         </div>
-        <h2 class="spacial-sentence__title"></h2>
-        <p class="spacial-sentence__text"></p>
-        <a class="spacial-sentence__button button"></a>
+        <h2 class="special-sentence__title">акционные предложения</h2>
+        <p class="special-sentence__text">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
+        <a class="special-sentence__button button">заказать оформление</a>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <ul class="footer__nav-list nav-list">
-          <li class="nav-list__item"><a class="nav-list__item-link">свадебная флористика</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link">букеты на любые мероприятия</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link">букеты невесты</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link">композиции</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link">оформление мероприятий</a></li>
+        <ul class="footer__nav-list nav-list nav-list--footer">
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer">Свадебная флористика</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer">Букеты на любые мероприятия</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer">Букеты невесты</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer">Композиции</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer">Оформление мероприятий</a></li>
         </ul>
         <ul class="footer__social-list"> 
           <li class="footer__social-list-item">
             <a class="footer__social-list-link">
-              <svg class="footer__social-list-img">
-                <use xlink:href="#"></use>
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-inst_footer"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="footer__social-list-link">
-              <svg class="footer__social-list-img">
-                <use xlink:href="#"></use>
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-fb_footer"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="footer__social-list-link">
-              <svg class="footer__social-list-img">
-                <use xlink:href="#"></use>
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-whatsapp_footer"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="footer__social-list-link">
-              <svg class="footer__social-list-img">
-                <use xlink:href="#"></use>
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-vk_footer"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

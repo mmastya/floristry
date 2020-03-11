@@ -1,0 +1,31 @@
+.nav {
+    position: relative;
+}
+
+.nav__toggle {
+    position: absolute;
+    top: -44px;
+    right: 30px;
+    width: 37px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+}
+
+.nav--closed .nav__toggle {
+    background-image: url("../img/icon-burger_mobile.svg");
+}
+
+.nav--opened .nav__toggle {
+    width: 21px;
+    background-image: url("../img/close-mobile.svg");
+}
+
+.nav--closed .nav-list {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}

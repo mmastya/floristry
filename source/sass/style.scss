@@ -18,3 +18,41 @@
 @import "./blocks/main-composition.scss";
 @import "./blocks/main-decor.scss";
 @import "./blocks/main-wedding.scss";
+@import "./blocks/button.scss";
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    background-color: #3B181E;; 
+}
+  
+img {
+    max-width: 100%;
+    height: auto; 
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+  
+.library {
+    display: none; 
+}

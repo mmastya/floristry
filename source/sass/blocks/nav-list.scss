@@ -1,0 +1,44 @@
+.nav-list {
+    &--footer {
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+.nav-list__item {
+    padding-left: 75px;
+    padding-right: 74px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &--footer {
+        margin-bottom: 15px;
+        padding-left: 60px;
+        padding-right: 63px;
+    }
+}
+
+.nav-list__item-link {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+
+    &--footer {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: none;
+    }
+
+    &:hover {
+        font-size: 25px;
+        line-height: 28px;
+        color: #FFFFFF;
+
+    }
+}

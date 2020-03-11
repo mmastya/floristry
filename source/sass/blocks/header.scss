@@ -1,0 +1,49 @@
+.header__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.header__info {
+    position: relative;
+}
+
+.header__info-title {
+    position: absolute;
+    top: 103px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__info-button {
+    position: absolute;
+    top: 222px;
+    left: 72px;
+}
+
+.header__bc-img {
+    width: 100%;
+}
+
+.header__social-list {
+    position: absolute;
+    bottom: 117px;
+    left: 30px;
+    display: flex;
+}
+
+.header__arrow-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+}

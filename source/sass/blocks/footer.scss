@@ -1,0 +1,22 @@
+.footer__wrapper {
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-bottom: 30px;
+}
+
+.footer__nav-list {
+    margin-bottom: 50px;
+}
+
+.footer__social-list {
+    display: flex;
+    padding-left: 19px;
+}
+
+.footer__social-list-item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

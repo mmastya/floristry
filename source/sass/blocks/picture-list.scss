@@ -1,0 +1,44 @@
+.picture-list__item {
+    position: relative;
+}
+
+.picture-list__item-bc-img {
+    width: 100%;
+}
+
+.picture-list__item-number {
+    position: absolute;
+    top: 23px;
+    padding-left: 100px;
+    font-family: Forum;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        width: 70px;
+        height: 1px;
+        background-color: #FFFFFF;
+    }
+}
+
+.picture-list__item-title {
+    position: absolute;
+    bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .9;
+}
