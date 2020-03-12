@@ -1,0 +1,17 @@
+.button-order {
+    padding: 20px 30px 17px;
+    background-color: #010001;
+    box-sizing: border-box;
+    font-family: 'Forum', cursive;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+}

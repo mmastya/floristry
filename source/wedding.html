@@ -7,126 +7,123 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div class="library">
+      <include src="build/img/sprite.svg" href="index.html"></include>
+    </div>
     <header class="header">
-        <div class="header__wrapper">
-          <a class="header__logo">
-            <svg class="header__logo-img">
-              <use xlink:href="#"></use>
-            </svg>
-          </a>
-        </div>
-        <nav class="header__nav nav">
-          <button class="nav__toggel"></button>
-          <ul class="header__nav-list nav-list">
-            <li class="nav-list__item"><a class="nav-list__item-link">свадебная флористика</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">букеты на любые мероприятия</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">букеты невесты</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">композиции</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">оформление мероприятий</a></li>
-          </ul>
-        </nav>
-        <div class="header__info">
-          <h1 class="header__info-title">флористика с душой</h1>
-          <a class="header__info-button">смотреть работы</a>
-          <ul class="header__social-list social-list">
-            <li class="social-list__item">
-              <a class="social-list__item-link">
-                <svg class="social-list__item-icon">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__item-link">
-                <svg class="social-list__item-icon"> 
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__item-link">
-                <svg class="social-list__item-icon">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item"> 
-              <a class="social-list__item-link">
-                <svg class="social-list__item-icon">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="header__arrow-down">
-            <a class="header__arrow-down-link">
-              <svg class="header__arrow-down-icon">
-                <use xlink:href="#"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="./img/logo_desktop.svg">
+            <img class="header__logo-image" src="./img/logo_mobile.svg" width="96" height="29" alt="ВЕСНА ВСЕГДА">
+          </picture>
+        </a>
+      </div>
+      <nav class="header__nav nav nav--closed">
+        <button class="nav__toggle"></button>
+        <ul class="header__nav-list nav-list">
+          <li class="nav-list__item"><a class="nav-list__item-link" href="index.html">свадебная флористика</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-link" href="bouquets.html">букеты на любые мероприятия</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-link" href="wedding.html">букеты невесты</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-link" href="composition.html">композиции</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-link" href="decor.html">оформление мероприятий</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main-wedding">
-        <section class="wedding">
-            <div class="wedding__img-wrapper">
-                <img class="wedding__img"/>
-            </div>
-            <h1 class="wedding__title"></h1>
-            <p class="wedding__text"></p>
-            <a class="wedding__button button"></a>
-            <ul class="wedding__pictures pictures">
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-                <li class="pictures__item"></li>
-            </ul>
-        </section>
+      <section class="wedding">
+        <div class="wedding__img-wrapper">
+          <picture>
+            <img class="wedding__img" src="./img/wedding_bc_mobile.png" srcset="./img/wedding_bc_mobile@2x.png 2x" alt="букет невесты"/>
+          </picture>
+        </div>
+        <div class="wedding__content-wrapper">
+          <h1 class="wedding__title title">букеты невесты и свадебное оформление</h1>
+          <p class="wedding__text text">Свадьба–самое важное событие в<br> жизни молодожен.  Поэтому каждый из будущих супругов хочет, чтобы на торжестве все было идеально. Наша компания превзойдет ваши ожидания по красоте, качеству и лояльному ценнику. Обращаясь к нам, вы можете не переживать за оформление вашей свадьбы.</p>
+          <a class="wedding__button button-order-small">заказать</a>
+          <ul class="wedding__pictures pictures">
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="./img/wedding_first.png" srcset="./img/wedding_first@2x.png 2x" width="75" height="75" alt="букеты растрепаши в ведрах"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="./img/wedding_second.png" srcset="./img/wedding_second@2x.png 2x" width="75" height="75" alt="букет невесты с орхидеями и эвкалиптом"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="./img/wedding_third.png" srcset="./img/wedding_third@2x.png 2x" width="75" height="75" alt="классический букет невесты"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="./img/wedding_fourth.png" srcset="./img/wedding_fourth.png 2x" width="75" height="75" alt="букет невесты в лиловых тоннах"/>
+              </picture>
+            </li>
+            <li class="pictures__item"></li>
+            <li class="pictures__item"></li>
+            <li class="pictures__item"></li>
+            <li class="pictures__item"></li>
+          </ul>
+         </div>    
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper">
-          <ul class="footer__nav-list nav-list">
-            <li class="nav-list__item"><a class="nav-list__item-link">свадебная флористика</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">букеты на любые мероприятия</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">букеты невесты</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">композиции</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link">оформление мероприятий</a></li>
-          </ul>
-          <ul class="footer__social-list"> 
-            <li class="footer__social-list-item">
-              <a class="footer__social-list-link">
-                <svg class="footer__social-list-img">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="footer__social-list-link">
-                <svg class="footer__social-list-img">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="footer__social-list-link">
-                <svg class="footer__social-list-img">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="footer__social-list-link">
-                <svg class="footer__social-list-img">
-                  <use xlink:href="#"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="footer__wrapper">
+        <ul class="footer__nav-list nav-list nav-list--footer">
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="index.html">Свадебная флористика</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="bouquets.html">Букеты на любые мероприятия</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="wedding.html">Букеты невесты</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="composition.html">Композиции</a></li>
+          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="decor.html">Оформление мероприятий</a></li>
+        </ul>
+        <ul class="footer__social-list"> 
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link">
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-inst_footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link">
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-fb_footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link">
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-whatsapp_footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link">
+              <svg class="footer__social-list-img" width="25" height="26">
+                <use xlink:href="#icon-vk_footer"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
