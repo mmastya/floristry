@@ -7,3 +7,18 @@
 .decor__img {
     width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+    .decor__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .decor__button {
+        margin-right: 500px;
+    }
+}

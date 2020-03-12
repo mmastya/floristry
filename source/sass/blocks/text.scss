@@ -7,3 +7,11 @@
     line-height: 22px;
     color: #FFFFFF;
 }
+
+@media (min-width: $tablet-width) {
+    .text {
+        padding-bottom: 58px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

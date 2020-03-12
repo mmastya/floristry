@@ -43,3 +43,43 @@
     line-height: 24px;
     color: #FFFFFF;
 }
+
+@media (min-width: $tablet-width) {
+    .special-sentence__img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .special-sentence__img {
+        width: 453px;
+        height: 323px;
+    }
+
+    .special-sentence__title {
+        padding-top: 30px;
+        padding-right: 0;
+        font-size: 30px;
+        line-height: 51px;
+        text-align: center;
+    
+        &::before {
+            bottom: -20px;
+            left: calc(50% - 42px);
+        }
+    }
+
+    .special-sentence__text {
+        padding-top: 55px;
+        padding-bottom: 40px;
+        padding-right: 144px;
+        padding-left: 171px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .special-sentence__button {
+        margin-right: 262px;
+        margin-left: 251px;
+    }
+}

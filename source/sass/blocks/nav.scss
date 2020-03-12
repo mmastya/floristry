@@ -29,3 +29,10 @@
         display: block;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .nav__toggle {
+        top: -53px;
+        right: 50px;
+    }
+}

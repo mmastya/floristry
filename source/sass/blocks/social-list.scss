@@ -4,3 +4,14 @@
          margin-right: 0;
      }
 }
+
+@media (min-width: $tablet-width) {
+    .social-list__item {
+        margin-right: 80px;
+    }
+
+    .social-list__item-icon {
+        width: 55px;
+        height: 55px;
+    }
+}

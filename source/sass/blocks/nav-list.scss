@@ -46,3 +46,39 @@
         color: #FFFFFF;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .nav-list {
+        padding-top: 148px;
+        padding-bottom: 161px;
+        background-color: #3B181E;
+
+        &--footer {
+            padding-top: 40px;
+            padding-bottom: 0;
+            border-top: none;
+        }
+    }
+
+    .nav-list__item {
+        padding-left: 230px;
+        padding-right: 231px;
+    }
+
+    .nav-list__item-link {
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+    
+        &--footer {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    
+        &:hover {
+            font-size: 45px;
+            line-height: 50px;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -10,6 +10,8 @@
     <div class="library">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-down_mobile" viewBox="0 0 14 21">
 <path d="M7 19.9014L1.19672 13.9887M7 19.9014L12.7973 14.2141M7 19.9014L7.17941 0.92916" stroke="white"></path>
+</symbol><symbol id="icon-arrow-down_tablet" viewBox="0 0 27 43">
+<path d="M13.9819 42.2079L1.23624 29.4623M13.9819 42.2079L26.4791 29.717M13.9819 42.2079L13.9869 0.928316" stroke="white"></path>
 </symbol><symbol id="icon-burger_mobile" viewBox="0 0 37 12">
 <path d="M0 1H37" stroke="white"></path>
 <path d="M0 11.1738H37" stroke="white"></path>
@@ -46,10 +48,10 @@
 </symbol></svg>
     </div>
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper--tablet-bc">
         <a class="header__logo">
           <picture>
-            <source media="(min-width: 1920px)" srcset="./img/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo_desktop.svg">
             <img class="header__logo-image" src="./img/logo_mobile.svg" width="96" height="29" alt="ВЕСНА ВСЕГДА">
           </picture>
         </a>
@@ -66,7 +68,6 @@
       </nav>
       <div class="header__info">
         <img class="header__bc-img" src="./img/background_flower_mobile.png" alt="цветочная композиция">
-        <div class="header__info-wrapper-content">
           <h1 class="header__info-title">флористика с душой</h1>
           <a class="header__info-button button">смотреть работы</a>
           <ul class="header__social-list social-list">
@@ -93,6 +94,7 @@
             </li>
             <li class="social-list__item"> 
               <a class="social-list__item-link">
+                
                 <svg class="social-list__item-icon" width="35" height="35">
                   <use xlink:href="#icon-vk_mobile"></use>
                 </svg>
@@ -101,52 +103,13 @@
           </ul>
           <div class="header__arrow-down">
             <a class="header__arrow-down-link">
-              <svg class="header__arrow-down-icon" width="14" height="21">
-                <use xlink:href="#icon-arrow-down_mobile"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/icon-arrow-down_tablet.svg">
+                <img class="header__arrow-down-icon" src="./img/icon-arrow-down_mobile.svg" width="14" height="14" alt="стрелка вниз">
+              </picture>
             </a>
           </div>
         </div>
-        <h1 class="header__info-title">флористика с душой</h1>
-        <a class="header__info-button button">смотреть работы</a>
-        <ul class="header__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__item-link">
-              <svg class="social-list__item-icon" width="35" height="35">
-                <use xlink:href="#icon-insta_mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__item-link">
-              <svg class="social-list__item-icon" width="35" height="35"> 
-                <use xlink:href="#icon-fb_mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__item-link">
-              <svg class="social-list__item-icon" width="35" height="35">
-                <use xlink:href="#icon-whatsapp_mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item"> 
-            <a class="social-list__item-link">
-              <svg class="social-list__item-icon" width="35" height="35">
-                <use xlink:href="#icon-vk_mobile"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="header__arrow-down">
-          <a class="header__arrow-down-link">
-            <svg class="header__arrow-down-icon" width="14" height="21">
-              <use xlink:href="#icon-arrow-down_mobile"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
     </header>
     <main>
       <section class="catalog">
@@ -155,6 +118,7 @@
           <ul class="catalog__picture-list picture-list">
             <li class="picture-list__item">
               <picture>
+                <source media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.png 1x, ./img/catalog_buket1_tablet@2x.png 2x">
                 <img class="picture-list__item-bc-img" src="./img/catalog_buket1_mobile.jpg" srcset="./img/catalog_buket1_mobile@2x.jpg 2x" alt="букет невесты"> 
               </picture>
               <p class="picture-list__item-number">01</p>

@@ -16,3 +16,11 @@
         background-color: #FFFFFF;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .button {
+        padding: 20px 52px 21px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

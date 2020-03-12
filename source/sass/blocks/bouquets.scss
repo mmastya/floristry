@@ -8,3 +8,17 @@
     padding-top: 30px;
 }
 
+@media (min-width: $tablet-width) {
+    .bouquets__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .bouquets__button {
+        margin-right: 500px;
+    }
+}

@@ -20,3 +20,14 @@
         background-color: #FFFFFF;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .button-order-small {
+        padding-right: 42px;
+        padding-left: 46px;
+        padding-top: 21px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

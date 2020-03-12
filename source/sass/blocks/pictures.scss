@@ -4,3 +4,16 @@
     margin-bottom: 40px;
     margin-top: 45px;
 }
+
+@media (min-width: $tablet-width) {
+    .pictures {
+        justify-content: space-between;
+        order: -1;
+        margin-top: 0;
+    }
+
+    .pictures__item-img {
+        width: 145px;
+        height: 145px;
+    }
+}

@@ -48,6 +48,70 @@
     left: 50%;
 }
 
-.header__info-wrapper-content {
+@media (min-width: $tablet-width) {
+    .header__wrapper {
+        padding: 30px 50px 20px;
+
+        &--tablet-bc {
+           &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            z-index: -1;
+            width: 100%;
+            min-height: 1024px;
+            top: 0;
+            right: 0;
+            left: inherit;
+            background-image: url("../img/background_flower_tablet.png");
+            background-position: 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
     
+            @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+              background-image: url("../img/background_flower_tablet@2x.png");
+            }
+        } 
+    }
+
+        
+    }
+
+    .header__bc-img {
+        display: none;
+    }
+
+    .header__info {
+        min-height: 1024px;
+    }
+
+    .header__logo-image {
+        width: 137px;
+        height: 47px;
+    }
+
+    .header__info-title {
+        font-size: 70px;
+        line-height: 77px;
+    }
+
+    .header__info-button {
+        top: 45%;
+        left: 255px;
+    }
+
+    .header__social-list {
+        bottom: 22%;
+        left: 154px;
+    }
+
+    .header__arrow-down-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__arrow-down {
+        bottom: 157px;
+        left: calc(50% - 29.19px/2 + 14.58px);
+    }
 }

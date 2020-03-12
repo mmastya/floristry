@@ -42,3 +42,24 @@
     color: #fff;
     opacity: .9;
 }
+
+@media (min-width: $tablet-width) {
+    .picture-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .picture-list__item-bc-img {
+        width: 330px;
+        height: 450px;
+    }
+
+    .picture-list__item-number {
+        padding-left: 20px;
+    
+        &::before {
+            left: 50px;
+        }
+    }
+}
