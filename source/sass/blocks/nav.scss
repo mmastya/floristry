@@ -36,3 +36,22 @@
         right: 50px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .nav__toggle {
+        top: -82px;
+        right: 89px
+    }
+    
+    .nav--closed .nav__toggle {
+        width: 104px;
+        height: 76px;
+        background-image: url("../img/icon-burger_desktop.svg");
+    }
+    
+    .nav--opened .nav__toggle {
+        width: 104px;
+        height: 76px;
+        background-image: url("../img/close-desktop.svg");
+    }
+}

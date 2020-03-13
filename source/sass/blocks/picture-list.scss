@@ -63,3 +63,16 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .picture-list {
+        
+    }
+
+    .picture-list__item-number {
+    
+        &::before {
+            top: 16px;
+        }
+    }
+}

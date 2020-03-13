@@ -48,6 +48,10 @@
     left: 50%;
 }
 
+.header__arrow-down-link-text {
+    display: none;
+}
+
 @media (min-width: $tablet-width) {
     .header__wrapper {
         padding: 30px 50px 20px;
@@ -73,9 +77,7 @@
             }
         } 
     }
-
-        
-    }
+}
 
     .header__bc-img {
         display: none;
@@ -113,5 +115,90 @@
     .header__arrow-down {
         bottom: 157px;
         left: calc(50% - 29.19px/2 + 14.58px);
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .header__wrapper {
+        padding: 87px 96px 20px;
+
+        &--tablet-bc {
+           &::after {
+            background-image: url("../img/background_flower_desktop.png");
+    
+            @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+              background-image: url("../img/background_flower_desktop@2x.png");
+            }
+        } 
+    }
+}
+
+    .header__info {
+        width: 1830px;
+        margin: 0 auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 280px;
+            left: 49%;
+            background-image: url("../img/icon-mouse.svg");
+            background-repeat: no-repeat;
+            z-index: 1;
+            width: 42px;
+            height: 56px;
+
+            &:hover {
+                background-image: url("../img/icon-mouse_hover.svg");
+            }
+        }
+    }
+
+    .header__info-title {
+        top: 13%;
+        width: 100%;
+        padding-left: 517px;
+        padding-right: 450px;
+        font-family: 'Forum', cursive;
+        font-size: 120px;
+        line-height: 132px;
+        box-sizing: border-box;
+    }
+
+    .header__info-button {
+        top: 49%;
+        left: 45%;
+    }
+
+    .header__arrow-down-link-text {
+        display: block;
+        font-family: 'Forum', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        transform: rotate(90deg);
+        width: 178px;
+        margin-left: -79px;
+        margin-bottom: 87px;
+    }
+
+    .header__arrow-down-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .header__arrow-down {
+        bottom: 274px;
+        left: calc(97% - 29.19px/2 + 14.58px);
+        width: 100px;
+    }
+
+    .header__social-list {
+        bottom: 22%;
+        left: 0px;
+        flex-direction: column;
     }
 }

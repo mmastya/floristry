@@ -41,7 +41,23 @@
           <div class="bouquets__content-wrapper">
             <h1 class="bouquets__title title">букеты на мероприятия</h1>
             <p class="bouquets__text text">У нас есть огромное разноообразие букетов на любое событие.<br>Вы сможете приобрести как нежный букет, так и яркий, а также мужские, круглые, вертикалье, веерообразные, букеты-зонтики, букеты в вегетативной технике и много  других экзотических видов.</p>
-            <a class="bouquets__button button-order-small">заказать</a>
+            <button class="bouquets__button button-order-small">заказать</button>
+            <div class="modal">
+              <div class="modal__content">
+                <div class="modal__img">
+                  <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы"/>
+                </div>
+                <div class="modal__content-info">
+                  <div class="modal__close-button">
+                    <img class="modal__close-button-img" src="./img/close-modal.svg" width="22" height="22" alt="кнопка закрыть"/>
+                  </div>
+                  <p class="modal__title">Оставьте свой номер и мы вам перезвоним!</p>
+                  <input class="modal__input" type="text" placeholder="Имя"/>
+                  <input class="modal__input" type="tel" placeholder="Телефон"/>
+                  <button class="modal__call-button">позвоните мне</button>
+                </div>
+              </div>
+            </div>
             <ul class="bouquets__pictures pictures">
                 <li class="pictures__item">
                   <picture>
@@ -141,6 +157,26 @@
           navMain.classList.remove('nav--opened');
         }
       });
+
+      var modal = document.querySelector('.modal');
+    
+      var btn = document.querySelector('.button-order-small');
+      
+      var close = document.querySelector('.modal__close-button');
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+     
+      close.onclick = function() {
+        modal.style.display = "none";
+      }
+     
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>

@@ -44,3 +44,14 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+    .catalog__title {
+        padding-bottom: 120px;
+    }
+
+    .catalog__wrapper {
+        padding-right: 215px;
+        padding-left: 215px;
+    }
+}
+
