@@ -26,17 +26,6 @@
 @media (min-width: $desktop-width) {
     .bouquets {
         display: flex;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -125px;
-            left: 27px;
-            width: 963px;
-            height: 1021px;
-            border: 1px solid rgba(255,255,255,.2);
-        }
     }
 
     .bouquets__img-wrapper {
@@ -50,5 +39,17 @@
         padding-left: 114px;
         box-sizing: border-box;
         padding-top: 97px;
+        padding-bottom: 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -125px;
+            left: -1018px;
+            width: 1049px;
+            height: 1021px;
+            border: 1px solid rgba(255,255,255,.2);
+        }
     }
 }

@@ -44,6 +44,10 @@
     color: #FFFFFF;
 }
 
+.special-sentence__more-foto {
+    display: none;
+}
+
 @media (min-width: $tablet-width) {
     .special-sentence__img-wrapper {
         display: flex;
@@ -125,6 +129,11 @@
     .special-sentence__button {
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .special-sentence__more-foto {
+        display: block;
+        margin-left: auto;
     }
     
 }
