@@ -19,5 +19,9 @@
 }
 
 @media (min-width: $desktop-width) {
-    
+    .pictures {
+        order: 0;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
 }

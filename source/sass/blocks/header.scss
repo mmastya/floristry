@@ -84,7 +84,7 @@
     }
 
     .header__info {
-        min-height: 1024px;
+        min-height: 1086px;
     }
 
     .header__logo-image {
@@ -200,5 +200,95 @@
         bottom: 22%;
         left: 0px;
         flex-direction: column;
+    }
+
+    .header__wrapper {
+        &--bouquets-bc {
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: -1;
+                width: 50%;
+                min-height: 1086px;
+                top: 0;
+                right: inherit;
+                left: 0;
+                background-image: url("../img/bouqets_bc_desktop.png");
+                background-position: 0%;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+                @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+                  background-image: url("../img/bouqets_bc_desktop@2x.png");
+                }
+            } 
+        }
+
+        &--wedding-bc {
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: -1;
+                width: 50%;
+                min-height: 1086px;
+                top: 0;
+                right: inherit;
+                left: 0;
+                background-image: url("../img/wedding_bc_desktop.png");
+                background-position: 0%;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+                @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+                  background-image: url("../img/wedding_bc_desktop@2x.png");
+                }
+            } 
+        }
+
+        &--composition-bc {
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: -1;
+                width: 50%;
+                min-height: 1086px;
+                top: 0;
+                right: inherit;
+                left: 0;
+                background-image: url("../img/composition_bc_desktop.png");
+                background-position: 0%;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+                @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+                  background-image: url("../img/composition_bc_desktop@2x.png");
+                }
+            } 
+        }
+
+        &--decor-bc {
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: -1;
+                width: 50%;
+                min-height: 1086px;
+                top: 0;
+                right: inherit;
+                left: 0;
+                background-image: url("../img/decor_bc_desktop.png");
+                background-position: 0%;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+                @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+                  background-image: url("../img/decor_bc_desktop@2x.png");
+                }
+            } 
+        }
     }
 }

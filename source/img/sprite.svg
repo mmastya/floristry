@@ -25,6 +25,10 @@
 <rect x="9.5" y="9.5" width="17" height="17" rx="3.5" stroke="white"/>
 <circle cx="18" cy="18" r="3.46" stroke="white"/>
 <circle cx="23.04" cy="12.9599" r="1.08" fill="white"/>
+</symbol><symbol id="icon-instagram" viewBox="0 0 16 16">
+<rect x="0.5" y="0.5" width="15" height="15" rx="3.5" stroke="white"/>
+<circle cx="7.99998" cy="7.99998" r="3.02" stroke="white"/>
+<circle cx="12.48" cy="3.52" r="0.96" fill="white"/>
 </symbol><symbol id="icon-mouse" viewBox="0 0 38 56">
 <rect x="1.20913" y="0.35" width="35.5817" height="55.3" rx="17.7908" fill="#240000" fill-opacity="0.3" stroke="white" stroke-width="0.7"/>
 <path d="M19 9.4649L19 18.9297" stroke="white" stroke-width="0.7"/>

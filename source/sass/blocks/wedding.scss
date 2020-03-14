@@ -23,3 +23,33 @@
         margin-right: 500px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .wedding {
+        display: flex;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -125px;
+            left: 27px;
+            width: 963px;
+            height: 1021px;
+            border: 1px solid rgba(255,255,255,.2);
+        }
+    }
+
+    .wedding__img-wrapper {
+        display: none;
+    }
+
+    .wedding__content-wrapper {
+        flex-basis: 50%;
+        align-self: center;
+        margin-left: auto;
+        padding-left: 114px;
+        box-sizing: border-box;
+        padding-top: 97px;
+    }
+}

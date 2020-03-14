@@ -82,3 +82,41 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .nav-list {
+        padding-top: 148px;
+        padding-bottom: 161px;
+        background-color: #3B181E;
+
+        &--footer {
+            display: flex;
+            padding-top: 21px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .nav-list__item {
+        padding-left: 230px;
+        padding-right: 231px;
+
+        &--footer {
+            margin-right: 50px;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .nav-list__item-link {
+    
+        &--footer {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    
+    }
+}

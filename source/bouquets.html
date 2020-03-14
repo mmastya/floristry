@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg" href="index.html"></include>
     </div>
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper--bouquets-bc">
         <a class="header__logo">
           <picture>
             <source media="(min-width: 1920px)" srcset="./img/logo_desktop.svg">
@@ -31,79 +31,80 @@
       </nav>
     </header>
     <main class="main-bouquets">
-        <section class="bouquets">
-          <div class="bouquets__img-wrapper">
-            <picture>
-              <source media="(min-width: 768px)" srcset="./img/bouqets_bc_tablet.png 1x, ./img/bouqets_bc_tablet@2x.png 2x">
-              <img class="bouquets__img" src="./img/bouqets_bc_mobile.png" srcset="./img/bouqets_bc_mobile@2x.png 2x" alt="букет для подружки невесты"/>
-            </picture>  
-          </div>
-          <div class="bouquets__content-wrapper">
-            <h1 class="bouquets__title title">букеты на мероприятия</h1>
-            <p class="bouquets__text text">У нас есть огромное разноообразие букетов на любое событие.<br>Вы сможете приобрести как нежный букет, так и яркий, а также мужские, круглые, вертикалье, веерообразные, букеты-зонтики, букеты в вегетативной технике и много  других экзотических видов.</p>
-            <button class="bouquets__button button-order-small">заказать</button>
-            <div class="modal">
-              <div class="modal__content">
-                <div class="modal__img">
-                  <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы"/>
+      <section class="bouquets">
+        <div class="bouquets__img-wrapper">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="./img/bouqets_bc_desktop.png 1x, ./img/bouqets_bc_desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/bouqets_bc_tablet.png 1x, ./img/bouqets_bc_tablet@2x.png 2x">
+            <img class="bouquets__img" src="./img/bouqets_bc_mobile.png" srcset="./img/bouqets_bc_mobile@2x.png 2x" alt="букет для подружки невесты"/>
+          </picture>  
+        </div>
+        <div class="bouquets__content-wrapper">
+          <h1 class="bouquets__title title">букеты на мероприятия</h1>
+          <p class="bouquets__text text">У нас есть огромное разноообразие букетов на любое событие.<br>Вы сможете приобрести как нежный букет, так и яркий, а также мужские, круглые, вертикалье, веерообразные, букеты-зонтики, букеты в вегетативной технике и много  других экзотических видов.</p>
+          <button class="bouquets__button button-order-small">заказать</button>
+          <div class="modal">
+            <div class="modal__content">
+              <div class="modal__img">
+                <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы"/>
+              </div>
+              <div class="modal__content-info">
+                <div class="modal__close-button">
+                  <img class="modal__close-button-img" src="./img/close-modal.svg" width="22" height="22" alt="кнопка закрыть"/>
                 </div>
-                <div class="modal__content-info">
-                  <div class="modal__close-button">
-                    <img class="modal__close-button-img" src="./img/close-modal.svg" width="22" height="22" alt="кнопка закрыть"/>
-                  </div>
-                  <p class="modal__title">Оставьте свой номер и мы вам перезвоним!</p>
-                  <input class="modal__input" type="text" placeholder="Имя"/>
-                  <input class="modal__input" type="tel" placeholder="Телефон"/>
-                  <button class="modal__call-button">позвоните мне</button>
-                </div>
+                <p class="modal__title">Оставьте свой номер и мы вам перезвоним!</p>
+                <input class="modal__input" type="text" placeholder="Имя"/>
+                <input class="modal__input" type="tel" placeholder="Телефон"/>
+                <button class="modal__call-button">позвоните мне</button>
               </div>
             </div>
-            <ul class="bouquets__pictures pictures">
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" src="img/bouqets_first.jpg" srcset="img/bouqets_first@2x.jpg 2x" width="75" height="75" alt="лиловые цветы в белом кувшине"/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" src="img/bouqets_second.jpg" srcset="img/bouqets_second@2x.jpg 2x" width="75" height="75" alt="букет невесты"/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" src="img/bouqets_third.png" srcset="img/bouqets_third@2x.png 2x" width="75" height="75" alt="букет с подсолнухами"/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" src="img/bouqets_fourth.jpg" srcset="img/bouqets_fourth@2x.jpg 2x" width="75" height="75" alt="розовые пионы в вазе"/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" srcset="" alt=""/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" srcset="" alt=""/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" srcset="" alt=""/>
-                  </picture>
-                </li>
-                <li class="pictures__item">
-                  <picture>
-                    <img class="pictures__item-img" srcset="" alt=""/>
-                  </picture>
-                </li>
-            </ul>
           </div>
-        </section>
+          <ul class="bouquets__pictures pictures">
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="img/bouqets_first.jpg" srcset="img/bouqets_first@2x.jpg 2x" width="75" height="75" alt="лиловые цветы в белом кувшине"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="img/bouqets_second.jpg" srcset="img/bouqets_second@2x.jpg 2x" width="75" height="75" alt="букет невесты"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="img/bouqets_third.png" srcset="img/bouqets_third@2x.png 2x" width="75" height="75" alt="букет с подсолнухами"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" src="img/bouqets_fourth.jpg" srcset="img/bouqets_fourth@2x.jpg 2x" width="75" height="75" alt="розовые пионы в вазе"/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" srcset="" alt=""/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" srcset="" alt=""/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" srcset="" alt=""/>
+              </picture>
+            </li>
+            <li class="pictures__item">
+              <picture>
+                <img class="pictures__item-img" srcset="" alt=""/>
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--none">
       <div class="footer__wrapper">
         <ul class="footer__nav-list nav-list nav-list--footer">
           <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="index.html">Свадебная флористика</a></li>
