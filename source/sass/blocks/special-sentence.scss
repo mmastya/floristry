@@ -60,6 +60,7 @@
     }
 
     .special-sentence__title {
+        width: 100%;
         padding-top: 30px;
         padding-right: 0;
         font-size: 30px;
@@ -73,6 +74,7 @@
     }
 
     .special-sentence__text {
+        width: 100%;
         padding-top: 55px;
         padding-bottom: 40px;
         padding-right: 144px;
@@ -85,6 +87,12 @@
     .special-sentence__button {
         margin-right: 262px;
         margin-left: 251px;
+    }
+
+    .special-sentence__wrapper-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

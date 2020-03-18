@@ -1,5 +1,13 @@
 .picture-list__item {
     position: relative;
+
+    &:hover {
+        &::before {
+            width: 350px;
+            height: 470px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
 }
 
 .picture-list__item-bc-img {
@@ -47,7 +55,7 @@
     .picture-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .picture-list__item-bc-img {

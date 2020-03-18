@@ -1,17 +1,45 @@
 .social-list__item {
+    width: 35px;
+    height: 35px;
+    background-color: #3b181e;
+    border-radius: 50px;
     margin-right: 40px;
      &:last-child {
          margin-right: 0;
      }
 }
 
+.social-list__item-icon {
+    padding-left: 9px;
+    padding-top: 7px;
+}
+
 @media (min-width: $tablet-width) {
     .social-list__item {
+        width: 55px;
+        height: 55px;
         margin-right: 80px;
     }
 
     .social-list__item-icon {
+        width: 28px;
+        height: 28px;
+        padding-left: 14px;
+        padding-top: 13px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .social-list__item {
         width: 55px;
         height: 55px;
+        background-color: transparent;
+    }
+
+    .social-list__item-icon {
+        width: 25px;
+        height: 25px;
+        padding-left: 14px;
+        padding-top: 13px;
     }
 }

@@ -32,8 +32,14 @@
 
 @media (min-width: $tablet-width) {
     .nav__toggle {
-        top: -53px;
+        top: 0;
         right: 50px;
+        z-index: 2;
+    }
+
+    .nav--opened .header__logo-img {
+        top: 112px;
+        left: 40%;
     }
 }
 

@@ -1,4 +1,7 @@
 .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-left: 15px;
     padding-right: 17px;
     padding-bottom: 25px;

@@ -1,4 +1,5 @@
 .nav-list {
+    width: 100%;
     &--footer {
         padding-top: 30px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -49,9 +50,10 @@
 
 @media (min-width: $tablet-width) {
     .nav-list {
-        padding-top: 148px;
+        padding-top: 307px;
         padding-bottom: 161px;
         background-color: #3B181E;
+        z-index: 1;
 
         &--footer {
             padding-top: 40px;
@@ -61,8 +63,13 @@
     }
 
     .nav-list__item {
+        margin-bottom: 71px;
         padding-left: 230px;
         padding-right: 231px;
+
+        &--footer {
+            margin-bottom: 20px;
+        }
     }
 
     .nav-list__item-link {
@@ -85,20 +92,21 @@
 
 @media (min-width: $desktop-width) {
     .nav-list {
-        padding-top: 148px;
+        padding-top: 344px;
         padding-bottom: 161px;
         background-color: #3B181E;
 
         &--footer {
             display: flex;
+            justify-content: center;
             padding-top: 21px;
             padding-bottom: 30px;
         }
     }
 
     .nav-list__item {
-        padding-left: 230px;
-        padding-right: 231px;
+        padding-left: 789px;
+        padding-right: 794px;
 
         &--footer {
             margin-right: 50px;
@@ -112,7 +120,14 @@
     }
 
     .nav-list__item-link {
-    
+        font-size: 35px;
+        line-height: 39px;
+
+        &:hover {
+            font-size: 45px;
+            line-height: 50px;
+        }
+
         &--footer {
             font-size: 16px;
             line-height: 18px;
