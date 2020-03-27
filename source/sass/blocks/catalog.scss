@@ -1,5 +1,5 @@
 .catalog {
-    margin-bottom: 123px;
+    margin-bottom: 100px;
     padding-top: 100px;
     padding-left: 16px;
     padding-right: 16px;
@@ -15,6 +15,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.catalog__picture-list {
+    
 }
 
 @media (min-width: $tablet-width) {

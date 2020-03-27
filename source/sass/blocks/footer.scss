@@ -24,6 +24,10 @@
     }
 }
 
+.footer__social-list-img:hover rect {
+    fill:white;
+}
+
 @media (min-width: $tablet-width) {
     .footer {
         margin-right: 21px;

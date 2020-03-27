@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ВЕСНА ВСЕГДА</title>
+
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -112,44 +113,48 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="catalog__title">каталог услуг</h2>
-          <ul class="catalog__picture-list picture-list">
-            <li class="picture-list__item">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.png 1x, ./img/catalog_buket1_tablet@2x.png 2x">
-                <img class="picture-list__item-bc-img" src="./img/catalog_buket1_mobile.jpg" srcset="./img/catalog_buket1_mobile@2x.jpg 2x" alt="букет невесты"> 
-              </picture>
-              <p class="picture-list__item-number">01</p>
-              <p class="picture-list__item-title">букет невесты и свадебное оформление</p>
-            </li>
-            <li class="picture-list__item">
-              <picture>
-                <img class="picture-list__item-bc-img" src="./img/catalog_buket2_mobile.jpg" srcset="./img/catalog_buket2_mobile@2x.jpg 2x" alt="букеты на торжества"> 
-              </picture>
-              <p class="picture-list__item-number">02</p>
-              <p class="picture-list__item-title">букеты на торжества</p>
-            </li>
-            <li class="picture-list__item">
-              <picture>
-                <img class="picture-list__item-bc-img" src="./img/catalog_buket3_mobile.jpg" srcset="./img/catalog_buket3_mobile@2x.jpg 2x" alt="композиции"> 
-              </picture>
-              <p class="picture-list__item-number">03</p>
-              <p class="picture-list__item-title">композиции</p>
-            </li>
-            <li class="picture-list__item">
-              <picture>
-                <img class="picture-list__item-bc-img" src="./img/catalog_buket4_mobile.png" srcset="./img/catalog_buket4_mobile@2x.png 2x" alt="оформление мероприятий"> 
-              </picture>
-              <p class="picture-list__item-number">04</p>
-              <p class="picture-list__item-title">оформление мероприятий</p>
-            </li>
-          </ul>
-          <ul class="catalog__toggel-list toggel-list">
-            <li class="toggel-list__item"></li>
-            <li class="toggel-list__item"></li>
-            <li class="toggel-list__item"></li>
-            <li class="toggel-list__item"></li>
-          </ul>
-        </div>
+          <div id="carousel" class="catalog__carousel">
+            <div class="catalog__gallery">
+              <ul class="catalog__picture-list picture-list">
+                <li class="picture-list__item">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.png 1x, ./img/catalog_buket1_tablet@2x.png 2x">
+                    <img class="picture-list__item-bc-img" src="./img/catalog_buket1_mobile.jpg" srcset="./img/catalog_buket1_mobile@2x.jpg 2x" alt="букет невесты"> 
+                  </picture>
+                  <p class="picture-list__item-number">01</p>
+                  <p class="picture-list__item-title">букет невесты и свадебное оформление</p>
+                </li>
+                <li class="picture-list__item">
+                  <picture>
+                    <img class="picture-list__item-bc-img" src="./img/catalog_buket2_mobile.jpg" srcset="./img/catalog_buket2_mobile@2x.jpg 2x" alt="букеты на торжества"> 
+                  </picture>
+                  <p class="picture-list__item-number">02</p>
+                  <p class="picture-list__item-title">букеты на торжества</p>
+                </li>
+                <li class="picture-list__item">
+                  <picture>
+                    <img class="picture-list__item-bc-img" src="./img/catalog_buket3_mobile.jpg" srcset="./img/catalog_buket3_mobile@2x.jpg 2x" alt="композиции"> 
+                  </picture>
+                  <p class="picture-list__item-number">03</p>
+                  <p class="picture-list__item-title">композиции</p>
+                </li>
+                <li class="picture-list__item">
+                  <picture>
+                    <img class="picture-list__item-bc-img" src="./img/catalog_buket4_mobile.png" srcset="./img/catalog_buket4_mobile@2x.png 2x" alt="оформление мероприятий"> 
+                  </picture>
+                  <p class="picture-list__item-number">04</p>
+                  <p class="picture-list__item-title">оформление мероприятий</p>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__toggle-list toggle-list">
+              <div class="toggle-list__item  toggle-list__item--active"></div>
+              <div class="toggle-list__item"></div>
+              <div class="toggle-list__item"></div>
+              <div class="toggle-list__item"></div>
+            </div>
+          </div>
+        </div>               
       </section>
       <section class="special-sentence">
         <div class="special-sentence__img-wrapper">
@@ -237,9 +242,7 @@
       });
 
       var modal = document.querySelector('.modal');
-    
-      var btn = document.querySelector('.button-order');
-      
+      var btn = document.querySelector('.button-order');     
       var close = document.querySelector('.modal__close-button');
       
       btn.onclick = function() {
@@ -256,5 +259,6 @@
         }
       }
     </script>
+    <script src="./js/carousel-main.js"></script>
   </body>
 </html>

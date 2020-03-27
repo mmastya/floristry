@@ -2,7 +2,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .header__info {
@@ -15,6 +15,7 @@
 
 .header__info-content-wrapper {
     position: absolute;
+    top: 102px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 

@@ -1,12 +1,14 @@
 .picture-list__item {
     position: relative;
 
-    &:hover {
-        &::before {
-            width: 350px;
-            height: 470px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    &:nth-child(2) {
+        display: none;
+    }
+    &:nth-child(3) {
+        display: none;
+    }
+    &:nth-child(4) {
+        display: none;
     }
 }
 
@@ -32,14 +34,22 @@
         width: 70px;
         height: 1px;
         background-color: #FFFFFF;
+
+        &:hover {
+            left: 0;
+        }
+    }
+
+    &:hover {
+        left: 20px;
     }
 }
 
 .picture-list__item-title {
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 19px;
     font-family: 'Forum', cursive;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +65,29 @@
     .picture-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .picture-list__item {
+        position: relative;
+        margin-right: 28px;
+    
+        &:nth-child(2) {
+            display: block;
+            margin-right: 0;
+        }
+
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 330px;
+                height: 450px;
+                background: rgba(0, 0, 0, 0.6);
+            }
+        }
     }
 
     .picture-list__item-bc-img {
@@ -75,6 +107,25 @@
 @media (min-width: $desktop-width) {
     .picture-list {
         justify-content: center;
+    }
+
+    .picture-list__item {
+        margin-right: 60px;
+
+        &:nth-child(2) {
+            display: block;
+            margin-right: 60px;
+        }
+        &:nth-child(3) {
+            display: block;
+        }
+        &:nth-child(4) {
+            display: block;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     .picture-list__item-number {
