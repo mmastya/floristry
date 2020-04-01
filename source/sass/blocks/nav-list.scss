@@ -1,9 +1,5 @@
 .nav-list {
     width: 100%;
-    &--footer {
-        padding-top: 30px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
 }
 
 .nav-list__item {
@@ -11,12 +7,6 @@
     padding-right: 74px;
     margin-bottom: 50px;
     text-align: center;
-
-    &--footer {
-        margin-bottom: 15px;
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .nav-list__item-link {
@@ -29,17 +19,6 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
-
-    &--footer {
-        font-size: 16px;
-        line-height: 18px;
-        text-transform: none;
-        letter-spacing: 0;
-
-        &:hover {
-            color: #FFFFFF;
-        }
-    }
 
     &:hover {
         font-size: 25px;
@@ -54,33 +33,18 @@
         padding-bottom: 161px;
         background-color: #3B181E;
         z-index: 1;
-
-        &--footer {
-            padding-top: 40px;
-            padding-bottom: 0;
-            border-top: none;
-        }
     }
 
     .nav-list__item {
         margin-bottom: 71px;
         padding-left: 230px;
         padding-right: 231px;
-
-        &--footer {
-            margin-bottom: 20px;
-        }
     }
 
     .nav-list__item-link {
         font-size: 30px;
         line-height: 33px;
         text-align: center;
-    
-        &--footer {
-            font-size: 20px;
-            line-height: 22px;
-        }
     
         &:hover {
             font-size: 45px;
@@ -95,28 +59,11 @@
         padding-top: 344px;
         padding-bottom: 161px;
         background-color: #3B181E;
-
-        &--footer {
-            display: flex;
-            justify-content: center;
-            padding-top: 21px;
-            padding-bottom: 30px;
-        }
     }
 
     .nav-list__item {
         padding-left: 789px;
         padding-right: 794px;
-
-        &--footer {
-            margin-right: 50px;
-            padding-left: 0;
-            padding-right: 0;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 
     .nav-list__item-link {
@@ -127,11 +74,5 @@
             font-size: 45px;
             line-height: 50px;
         }
-
-        &--footer {
-            font-size: 16px;
-            line-height: 18px;
-        }
-    
     }
 }

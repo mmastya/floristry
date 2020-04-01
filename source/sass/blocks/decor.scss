@@ -33,15 +33,16 @@
     }
 
     .decor__content-wrapper {
-        flex-basis: 50%;
+        position: relative;
+        width: 50%;
         align-self: center;
         margin-left: auto;
         padding-left: 114px;
         box-sizing: border-box;
-        padding-top: 97px;
+        padding-top: 83px;
         padding-bottom: 0;
-        position: relative;
-
+        padding-right: 95px;
+        
         &::before {
             content: "";
             position: absolute;

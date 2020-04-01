@@ -15,7 +15,6 @@
 
 .header__info-content-wrapper {
     position: absolute;
-    top: 102px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -211,6 +210,7 @@
     }
 
     .header__wrapper {
+
         &--bouquets-bc {
             &::after {
                 content: "";
@@ -218,7 +218,7 @@
                 display: block;
                 z-index: -1;
                 width: 50%;
-                min-height: 1080px;
+                min-height: 1090px;
                 top: 0;
                 right: inherit;
                 left: 0;
@@ -232,7 +232,7 @@
                 }
             } 
         }
-
+        
         &--wedding-bc {
             &::after {
                 content: "";
@@ -240,7 +240,7 @@
                 display: block;
                 z-index: -1;
                 width: 50%;
-                min-height: 1080px;
+                min-height: 1090px;
                 top: 0;
                 right: inherit;
                 left: 0;
@@ -262,7 +262,7 @@
                 display: block;
                 z-index: -1;
                 width: 50%;
-                min-height: 1080px;
+                min-height: 1090px;
                 top: 0;
                 right: inherit;
                 left: 0;
@@ -284,7 +284,7 @@
                 display: block;
                 z-index: -1;
                 width: 50%;
-                min-height: 1080px;
+                min-height: 1090px;
                 top: 0;
                 right: inherit;
                 left: 0;

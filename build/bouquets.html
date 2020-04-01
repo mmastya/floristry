@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ВЕСНА ВСЕГДА</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -90,7 +92,7 @@
               </div>
             </div>
           </div>
-          <ul class="bouquets__pictures pictures">
+          <ul class="owl-carousel bouquets__pictures pictures">
             <li class="pictures__item">
               <picture>
                 <img class="pictures__item-img" src="img/bouqets_first.jpg" srcset="img/bouqets_first@2x.jpg 2x" width="75" height="75" alt="лиловые цветы в белом кувшине">
@@ -113,22 +115,22 @@
             </li>
             <li class="pictures__item">
               <picture>
-                <img class="pictures__item-img" srcset="" alt="">
+                <img class="pictures__item-img" src="img/bouqets_five.jpg" srcset="img/bouqets_five@2x.jpg 2x" width="75" height="75" alt="букет нежно-розовых цветов">
               </picture>
             </li>
             <li class="pictures__item">
               <picture>
-                <img class="pictures__item-img" srcset="" alt="">
+                <img class="pictures__item-img" src="img/bouqets_six.jpg" srcset="img/bouqets_six@2x.jpg 2x" alt="букет невесты с эвкалиптом и фиолетовыми цветами орхидеи">
               </picture>
             </li>
             <li class="pictures__item">
               <picture>
-                <img class="pictures__item-img" srcset="" alt="">
+                <img class="pictures__item-img" src="img/bouqets_seven.jpg" srcset="img/bouqets_seven@2x.jpg 2x" alt="букет невесты с вербой и белыми цветами">
               </picture>
             </li>
             <li class="pictures__item">
               <picture>
-                <img class="pictures__item-img" srcset="" alt="">
+                <img class="pictures__item-img" src="img/bouqets_eight.jpg" srcset="img/bouqets_eight@2x.jpg 2x" alt="мужчина и женщина позируют с маленьким букетом цветов   ">
               </picture>
             </li>
           </ul>
@@ -143,12 +145,12 @@
     </main>
     <footer class="footer footer--none">
       <div class="footer__wrapper">
-        <ul class="footer__nav-list nav-list nav-list--footer">
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="index.html">Свадебная флористика</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="bouquets.html">Букеты на любые мероприятия</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="wedding.html">Букеты невесты</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="composition.html">Композиции</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="decor.html">Оформление мероприятий</a></li>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="index.html">Свадебная флористика</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="bouquets.html">Букеты на любые мероприятия</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="wedding.html">Букеты невесты</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="composition.html">Композиции</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="decor.html">Оформление мероприятий</a></li>
         </ul>
         <ul class="footer__social-list"> 
           <li class="footer__social-list-item">
@@ -182,6 +184,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/second.js"></script>
     <script>
       var navMain = document.querySelector('.nav');
       var navToggle = document.querySelector('.nav__toggle');

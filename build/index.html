@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ВЕСНА ВСЕГДА</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -113,9 +114,9 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="catalog__title">каталог услуг</h2>
-          <div id="carousel" class="catalog__carousel">
+          <div class="catalog__carousel">
             <div class="catalog__gallery">
-              <ul class="catalog__picture-list picture-list">
+              <ul class="owl-carousel catalog__picture-list picture-list">
                 <li class="picture-list__item">
                   <picture>
                     <source media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.png 1x, ./img/catalog_buket1_tablet@2x.png 2x">
@@ -159,6 +160,8 @@
       <section class="special-sentence">
         <div class="special-sentence__img-wrapper">
           <picture>
+            <source media="(min-width: 1920px)" srcset="./img/special_desktop.jpg 1x, ./img/special_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/special_tablet.jpg 1x, ./img/special_tablet@2x.jpg 2x">
             <img class="special-sentence__img" src="./img/special_mobile.jpg" srcset="./img/special_mobile@2x.jpg 2x" alt="акционное предложение">
           </picture>
         </div>
@@ -187,12 +190,12 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <ul class="footer__nav-list nav-list nav-list--footer">
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer nav-list__item-link--footer" href="index.html">Свадебная флористика</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="bouquets.html">Букеты на любые мероприятия</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="wedding.html">Букеты невесты</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="composition.html">Композиции</a></li>
-          <li class="nav-list__item nav-list__item--footer"><a class="nav-list__item-link nav-list__item-link--footer" href="decor.html">Оформление мероприятий</a></li>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="index.html">Свадебная флористика</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="bouquets.html">Букеты на любые мероприятия</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="wedding.html">Букеты невесты</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="composition.html">Композиции</a></li>
+          <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="decor.html">Оформление мероприятий</a></li>
         </ul>
         <ul class="footer__social-list"> 
           <li class="footer__social-list-item">
@@ -226,8 +229,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
     <script>
-
       var navMain = document.querySelector('.nav');
       var navToggle = document.querySelector('.nav__toggle');
 
@@ -259,6 +264,5 @@
         }
       }
     </script>
-    <script src="./js/carousel-main.js"></script>
   </body>
 </html>
