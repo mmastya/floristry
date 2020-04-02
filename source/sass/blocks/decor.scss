@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.decor__pictures-wrapper {
+    margin-right: -20px;
+}
+
 @media (min-width: $tablet-width) {
     .decor__content-wrapper {
         display: flex;
@@ -20,6 +24,12 @@
 
     .decor__button {
         margin-right: 500px;
+    }
+
+    .decor__pictures-wrapper {
+        order: -1;
+        width: 650px;
+        margin: 0 auto;
     }
 }
 
@@ -52,5 +62,11 @@
             height: 1021px;
             border: 1px solid rgba(255,255,255,.2);
         }
+    }
+
+    .decor__pictures-wrapper {
+        order: 0;
+        width: 552px;
+        margin-left: 0;
     }
 }

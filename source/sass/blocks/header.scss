@@ -147,6 +147,7 @@
     .header__info {
         width: 1830px;
         margin: 0 auto;
+        z-index: 0;
 
         &::after {
             content: "";
@@ -191,6 +192,10 @@
         width: 178px;
         margin-left: -79px;
         margin-bottom: 87px;
+
+        &:hover {
+            margin-bottom: 100px;
+        }
     }
 
     .header__arrow-down-icon {
@@ -201,6 +206,8 @@
     .header__arrow-down {
         margin-left: auto;
         margin-top: -156px;
+
+
     }
 
     .header__social-list {

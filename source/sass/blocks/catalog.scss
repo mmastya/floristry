@@ -17,8 +17,8 @@
     color: #FFFFFF;
 }
 
-.catalog__picture-list {
-    
+.catalog__carousel {
+    overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +45,11 @@
             height: 2px;
             background-color: #FFFFFF;
         }
+    }
+
+    .catalog__gallery {
+        width: 696px;
+        margin: 0 auto;
     }
 }
 
@@ -77,6 +82,10 @@
             color: #FFFFFF;
             opacity: 0.03;
         }
+    }
+
+    .catalog__gallery {
+        width: 1500px;
     }
 }
 

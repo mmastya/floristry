@@ -8,6 +8,9 @@
     padding-top: 30px;
 }
 
+.wedding__pictures-wrapper {
+    margin-right: -20px;
+}
 
 @media (min-width: $tablet-width) {
     .wedding__content-wrapper {
@@ -21,6 +24,12 @@
 
     .wedding__button {
         margin-right: 500px;
+    }
+
+    .wedding__pictures-wrapper {
+        order: -1;
+        width: 650px;
+        margin: 0 auto;
     }
 }
 
@@ -53,5 +62,11 @@
             height: 1021px;
             border: 1px solid rgba(255,255,255,.2);
         }
+    }
+
+    .wedding__pictures-wrapper {
+        order: 0;
+        width: 552px;
+        margin-left: 0;
     }
 }

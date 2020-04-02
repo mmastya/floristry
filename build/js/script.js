@@ -4,8 +4,11 @@ $(function() {
     owl.owlCarousel({
       items: 1,
       loop: true,
-      margin: 28,
       dots: true,
+      autoHeight: true,
+      dotsClass: "toggle-list",
+      dotClass: "toggle-list__item",
+      margin: 30,
       responsive:{
         0:{
           items:1

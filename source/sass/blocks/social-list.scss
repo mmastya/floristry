@@ -4,9 +4,30 @@
     background-color: #3b181e;
     border-radius: 50px;
     margin-right: 40px;
-     &:last-child {
-         margin-right: 0;
-     }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-list__item-link {
+    fill: none;
+}
+
+.social-list__fb-rect {
+    stroke: white;
+    fill: none;
+}
+
+.social-list__item-link:hover .social-list__fb-rect {
+    fill: white;
+}
+
+.social-list__item-link:hover .social-list__fb-path {
+    fill: none;
+}
+
+.social-list__fb-path {
+    fill: white;
 }
 
 .social-list__item-icon {

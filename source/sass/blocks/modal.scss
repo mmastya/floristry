@@ -23,6 +23,11 @@
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
+  .modal__content-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .modal__title {
     padding-top: 20px;
     padding-right: 20px;
@@ -41,6 +46,7 @@
   
   /* The Close Button */
   .modal__call-button {
+    width: 100%;
     padding-right: 61px;
     padding-left: 61px;
     padding-top: 17px;
@@ -63,6 +69,7 @@
   }
 
   .modal__input {
+    width: 100%;
     margin-bottom: 15px;
     padding-left: 22px;
     padding-top: 14px;
@@ -143,6 +150,7 @@
     box-sizing: border-box;
     padding: 25px;
     padding-bottom: 66px;
+    padding-left: 0;
   }
 
   .modal__content {
@@ -161,8 +169,7 @@
 
   .modal__input {
     margin-bottom: 16px;
-    margin-right: 41px;
-    margin-left: 21px;
+    margin-left: 0;
     padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 13px;
@@ -171,8 +178,6 @@
   }
 
   .modal__call-button {
-    margin-right: 41px;
-    margin-left: 21px;
     padding: 17px 61px 15px;
     font-size: 11px;
     line-height: 12px;

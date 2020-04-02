@@ -22,8 +22,8 @@
 <path d="M0 1H37" stroke="white"></path>
 <path d="M0 11.1738H37" stroke="white"></path>
 </symbol><symbol id="icon-fb" viewBox="0 0 25 25">
-<rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" fill="none"></rect>
-<path d="M15.6309 12.2H13.6667V20H10.75V12.2H9V9.8H10.75V8.35391C10.7523 6.24922 11.6022 5 14.013 5H16V7.4H14.667C13.7282 7.4 13.6667 7.76094 13.6667 8.43359V9.8H16L15.6309 12.2Z" fill="white"></path>
+<rect class="social-list__fb-rect" x="0.5" y="0.5" width="24" height="24" rx="3.5"></rect>
+<path class="social-list__fb-path" d="M15.6309 12.2H13.6667V20H10.75V12.2H9V9.8H10.75V8.35391C10.7523 6.24922 11.6022 5 14.013 5H16V7.4H14.667C13.7282 7.4 13.6667 7.76094 13.6667 8.43359V9.8H16L15.6309 12.2Z"></path>
 </symbol><symbol id="icon-inst" viewBox="0 0 25 25">
 <rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" fill="none"></rect>
 <circle cx="12.5" cy="12.5" r="5" stroke="white" fill="none"></circle>
@@ -91,48 +91,50 @@
               </div>
             </div>
           </div>
-          <ul class="owl-carousel wedding__pictures pictures">
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_first.png" srcset="./img/wedding_first@2x.png 2x" width="75" height="75" alt="букеты растрепаши в ведрах">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_second.png" srcset="./img/wedding_second@2x.png 2x" width="75" height="75" alt="букет невесты с орхидеями и эвкалиптом">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_third.png" srcset="./img/wedding_third@2x.png 2x" width="75" height="75" alt="классический букет невесты">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_fourth.png" srcset="./img/wedding_fourth@2x.png 2x" width="75" height="75" alt="букет невесты в лиловых тоннах">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_five.jpg" srcset="./img/wedding_five@2x.jpg 2x" width="75" height="75" alt="классический букет невесты на фоне свадебной арки">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_six.jpg" srcset="./img/wedding_six@2x.jpg 2x" width="75" height="75" alt="букет подружки невесты с белыми цветами">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_seven.jpg" srcset="./img/wedding_seven@2x.jpg 2x" width="75" height="75" alt="цветочная композиция в лесном стиле">
-              </picture>
-            </li>
-            <li class="pictures__item">
-              <picture>
-                <img class="pictures__item-img" src="./img/wedding_eight.jpg" srcset="./img/wedding_eight@2x.jpg 2x" width="75" height="75" alt="букет невесты с красными сухоцветами">
-              </picture>
-            </li>
-          </ul>
+          <div class="wedding__pictures-wrapper">
+            <ul class="owl-carousel wedding__pictures pictures">
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_first.png" srcset="./img/wedding_first@2x.png 2x" width="75" height="75" alt="букеты растрепаши в ведрах">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_second.png" srcset="./img/wedding_second@2x.png 2x" width="75" height="75" alt="букет невесты с орхидеями и эвкалиптом">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_third.png" srcset="./img/wedding_third@2x.png 2x" width="75" height="75" alt="классический букет невесты">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_fourth.png" srcset="./img/wedding_fourth@2x.png 2x" width="75" height="75" alt="букет невесты в лиловых тоннах">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_five.jpg" srcset="./img/wedding_five@2x.jpg 2x" width="75" height="75" alt="классический букет невесты на фоне свадебной арки">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_six.jpg" srcset="./img/wedding_six@2x.jpg 2x" width="75" height="75" alt="букет подружки невесты с белыми цветами">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_seven.jpg" srcset="./img/wedding_seven@2x.jpg 2x" width="75" height="75" alt="цветочная композиция в лесном стиле">
+                </picture>
+              </li>
+              <li class="pictures__item">
+                <picture>
+                  <img class="pictures__item-img" src="./img/wedding_eight.jpg" srcset="./img/wedding_eight@2x.jpg 2x" width="75" height="75" alt="букет невесты с красными сухоцветами">
+                </picture>
+              </li>
+            </ul>
+          </div>
           <div class="special-sentence__more-foto more-foto">
             <a class="more-foto__link">
               <p class="more-foto__link-text">Больше фотографий в профиле</p>

@@ -70,11 +70,9 @@
 
     .picture-list__item {
         position: relative;
-        margin-right: 28px;
     
         &:nth-child(2) {
             display: block;
-            margin-right: 0;
         }
 
         &:hover {

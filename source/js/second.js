@@ -4,7 +4,13 @@ $(function() {
     owl.owlCarousel({
       items: 4,
       loop: true,
-      margin: 5,
+      margin: 15,
+      dots: false,
+      nav: true,
+      navText: [
+        '<div class="bouquets-arrow-owl bouquets-left"></div>',
+        '<div class="bouquets-arrow-owl bouquets-right"></div>'
+      ],
       responsive:{
         0:{
           items:4
