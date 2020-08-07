@@ -108,7 +108,7 @@
               </a>
           </div>
         </div> 
-      </div>
+      </div>                     
     </header>
     <main>
       <section class="catalog">
@@ -119,6 +119,9 @@
               <ul class="owl-carousel owl-theme catalog__picture-list picture-list">
                 <li class="picture-list__item">
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.webp 1x, ./img/catalog_buket1_tablet@2x.webp  2x">
+                    <source type="image/webp" srcset="./img/catalog_buket1_mobile.webp 1x, ./img/catalog_buket1_mobile@2x.webp 2x">
+
                     <source media="(min-width: 768px)" srcset="./img/catalog_buket1_tablet.png 1x, ./img/catalog_buket1_tablet@2x.png 2x">
                     <img class="picture-list__item-bc-img" src="./img/catalog_buket1_mobile.jpg" srcset="./img/catalog_buket1_mobile@2x.jpg 2x" alt="букет невесты"> 
                   </picture>
@@ -127,6 +130,8 @@
                 </li>
                 <li class="picture-list__item">
                   <picture>
+                    <source type="image/webp" srcset="./img/catalog_buket2_mobile.webp 1x, ./img/catalog_buket2_mobile@2x.webp 2x">
+
                     <img class="picture-list__item-bc-img" src="./img/catalog_buket2_mobile.jpg" srcset="./img/catalog_buket2_mobile@2x.jpg 2x" alt="букеты на торжества"> 
                   </picture>
                   <p class="picture-list__item-number">02</p>
@@ -134,6 +139,8 @@
                 </li>
                 <li class="picture-list__item">
                   <picture>
+                    <source type="image/webp" srcset="./img/catalog_buket3_mobile.webp 1x, ./img/catalog_buket3_mobile@2x.webp 2x">
+
                     <img class="picture-list__item-bc-img" src="./img/catalog_buket3_mobile.jpg" srcset="./img/catalog_buket3_mobile@2x.jpg 2x" alt="композиции"> 
                   </picture>
                   <p class="picture-list__item-number">03</p>
@@ -141,6 +148,8 @@
                 </li>
                 <li class="picture-list__item">
                   <picture>
+                    <source type="image/webp" srcset="./img/catalog_buket4_mobile.webp 1x, ./img/catalog_buket4_mobile@2x.webp 2x">
+
                     <img class="picture-list__item-bc-img" src="./img/catalog_buket4_mobile.png" srcset="./img/catalog_buket4_mobile@2x.png 2x" alt="оформление мероприятий"> 
                   </picture>
                   <p class="picture-list__item-number">04</p>
@@ -154,6 +163,10 @@
       <section class="special-sentence">
         <div class="special-sentence__img-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/special_desktop.webp 1x, ./img/special_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/special_tablet.webp 1x, ./img/special_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/special_mobile.webp 1x, ./img/special_mobile@2x.webp 2x">
+
             <source media="(min-width: 1920px)" srcset="./img/special_desktop.jpg 1x, ./img/special_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./img/special_tablet.jpg 1x, ./img/special_tablet@2x.jpg 2x">
             <img class="special-sentence__img" src="./img/special_mobile.jpg" srcset="./img/special_mobile@2x.jpg 2x" alt="акционное предложение">
@@ -168,7 +181,10 @@
       <div class="modal">
         <div class="modal__content">
           <div class="modal__img">
-            <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы">
+            <picture>
+              <source type="image/webp" srcset="./img/modal_desktop.webp 1x, ./img/modal_desktop@2x.webp 2x">
+              <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы">
+            </picture>
           </div>
           <div class="modal__content-info">
             <div class="modal__close-button">

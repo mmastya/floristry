@@ -67,6 +67,11 @@
       <section class="wedding">
         <div class="wedding__img-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/wedding_bc_desktop.webp 1x, ./img/wedding_bc_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/wedding_bc_tablet.webp 1x, ./img/wedding_bc_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/wedding_bc_mobile.webp 1x, ./img/wedding_bc_mobile@2x.webp 2x">
+
+            <source media="(min-width: 1920px)" srcset="./img/wedding_bc_desktop.png 1x, ./img/wedding_bc_desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/wedding_bc_tablet.png 1x, ./img/wedding_bc_tablet@2x.png 2x">
             <img class="wedding__img" src="./img/wedding_bc_mobile.png" srcset="./img/wedding_bc_mobile@2x.png 2x" alt="букет невесты">
           </picture>
@@ -78,7 +83,10 @@
           <div class="modal">
             <div class="modal__content">
               <div class="modal__img">
-                <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы">
+                <picture>
+                  <source type="image/webp" srcset="./img/modal_desktop.webp 1x, ./img/modal_desktop@2x.webp 2x">
+                  <img src="./img/modal_desktop.png" srcset="./img/modal_desktop@2x.png 2x" alt="розовые коалы">
+                </picture>
               </div>
               <div class="modal__content-info">
                 <div class="modal__close-button">
@@ -95,41 +103,49 @@
             <ul class="owl-carousel wedding__pictures pictures">
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_first.webp 1x, ./img/wedding_first@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_first.png" srcset="./img/wedding_first@2x.png 2x" width="75" height="75" alt="букеты растрепаши в ведрах">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_second.webp 1x, ./img/wedding_second@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_second.png" srcset="./img/wedding_second@2x.png 2x" width="75" height="75" alt="букет невесты с орхидеями и эвкалиптом">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_third.webp 1x, ./img/wedding_third@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_third.png" srcset="./img/wedding_third@2x.png 2x" width="75" height="75" alt="классический букет невесты">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_fourth.webp 1x, ./img/wedding_fourth@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_fourth.png" srcset="./img/wedding_fourth@2x.png 2x" width="75" height="75" alt="букет невесты в лиловых тоннах">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_five.webp 1x, ./img/wedding_five@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_five.jpg" srcset="./img/wedding_five@2x.jpg 2x" width="75" height="75" alt="классический букет невесты на фоне свадебной арки">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_six.webp 1x, ./img/wedding_six@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_six.jpg" srcset="./img/wedding_six@2x.jpg 2x" width="75" height="75" alt="букет подружки невесты с белыми цветами">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_seven.webp 1x, ./img/wedding_seven@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_seven.jpg" srcset="./img/wedding_seven@2x.jpg 2x" width="75" height="75" alt="цветочная композиция в лесном стиле">
                 </picture>
               </li>
               <li class="pictures__item">
                 <picture>
+                  <source type="image/webp" srcset="./img/wedding_eight.webp 1x, ./img/wedding_eight@2x.webp 2x">
                   <img class="pictures__item-img" src="./img/wedding_eight.jpg" srcset="./img/wedding_eight@2x.jpg 2x" width="75" height="75" alt="букет невесты с красными сухоцветами">
                 </picture>
               </li>
